@@ -131,13 +131,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo a mi vehicula
   }
 }
 ```
+### New Product
 
-### order_update
-
----POST /order_update---
+---POST /product_new---
 ```json
 {
-  "message": "order:update",
+  "message": "product:new",
   "payload": {
     "order": {
 
@@ -146,7 +145,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo a mi vehicula
 }
 ```
 
-### shipment_confirm
+### New Customer
+
+---POST /customer_new---
+```json
+{
+  "message": "customer:new",
+  "payload": {
+    "order": {
+
+    }
+  }
+}
+```
+
+### Shipment Confirm
 
 ---POST /shipment_confirm---
 ```json
@@ -160,12 +173,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at leo a mi vehicula
 }
 ```
 
-### inventory_update
+### Inventory Count
 
----POST /inventory_upate---
+---POST /inventory_count---
 ```json
 {
-  "message": "inventory:update",
+  "message": "inventory:count",
   "payload": {
     "order": {
 
